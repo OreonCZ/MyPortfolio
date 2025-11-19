@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MyPortfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/press-start-2p" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./res/images/GameLogo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <link rel="stylesheet" href="./res/style.css" />
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div id="container-main">
+<label class="toggle-switch">
+    <input type="checkbox" />
+    <span class="slider"></span>
+</label>
+
+<div class="crt-effect">
+
+<header>
+<div class="container">
+    <h1>⚠️ Portfolio ⚠️</h1>
+    <nav>
+    <ul>
+        <li><a href="./index.html">MAIN PAGE</a></li>
+        <li><a href="./aboutme.html">ABOUT ME</a></li>
+        <li><a href="./portfolio.html">MY PROJECTS</a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+<section id="about">
+<div class="container">
+    <div class="about-content">
+    <img src="./res/images/me.png" draggable="false" alt="me" id="me">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta hic mollitia, 
+        asperiores qui aliquam quas aperiam veniam odit voluptatibus minus illo maxime. 
+        Nesciunt autem minima dolores culpa officia, exercitationem at? Lorem ipsum dolor sit, 
+        amet consectetur adipisicing elit. Quos nobis, nemo impedit distinctio tempora ex 
+        architecto ipsam corrupti sed. Quae sit quos reprehenderit, voluptatem odit officiis 
+        incidunt vel sint fugit!
+    </p>
+    </div>
+    <div id="map"></div>
+</div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>OreonCZ (filipkucera5@gmail.com) - 2025</p>
+    </div>
+</footer>
+
+</div>
+</div>
+
+<!--JS-->
+<script src="./res/main.js"></script>
+<script src="./res/map.js"></script>
+</body>
+</html>
