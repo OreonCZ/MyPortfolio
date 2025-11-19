@@ -10,9 +10,9 @@ let fei = {
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map', { detectRetina: true }).setView([spsmb.x, spsmb.y], 13);
 
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_dark/{z}/{x}/{y}{r}.png', {
-        maxZoom: 25,
-        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        maxZoom: 20
     }).addTo(map);
 
     L.marker([spsmb.x, spsmb.y]).addTo(map).bindPopup('SPSMB').openPopup();
