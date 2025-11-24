@@ -475,6 +475,10 @@ nav ul {
     height: 150px;
   }
 
+  .warning {
+    display: none;
+  }
+
 
   .project.horizontal-project {
     flex-direction: column;
